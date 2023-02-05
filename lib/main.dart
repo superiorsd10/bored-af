@@ -1,6 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:bored_af/constants.dart';
+import 'package:bored_af/screens/error_screen.dart';
 import 'package:bored_af/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,9 @@ void main() {
     DeviceOrientation.portraitDown,
     DeviceOrientation.portraitUp,
   ]);
+  ErrorWidget.builder =(details) {
+    return const ErrorScreen();
+  };
   runApp(const MyApp());
 }
 

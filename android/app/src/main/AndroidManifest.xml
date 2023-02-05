@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bored_af">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <application
-        android:label="bored_af"
+        android:label="Bored AF?"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
